@@ -2,7 +2,7 @@ import java.io.File;
 import java.io.IOException;
 import java.util.Scanner;
 
-
+//Create new build, and run in terminal print "java Main",
 public class Main {
     /*Scanner scan = new Scanner(System.in);
     Data data = new Data();

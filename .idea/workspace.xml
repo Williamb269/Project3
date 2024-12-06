@@ -4,37 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="655c0084-3a89-4a4a-b7d2-3d69a723b446" name="Changes" comment="jdk22">
-      <change afterPath="$PROJECT_DIR$/src/Data.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Sprites.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sprites.java" afterDir="false" />
-    </list>
+    <list default="true" id="655c0084-3a89-4a4a-b7d2-3d69a723b446" name="Changes" comment="jdk22" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "SimonR15"
-  }
-}]]></component>
   <component name="GithubPullRequestsUISettings"><![CDATA[{
   "selectedUrlAndAccountId": {
-    "url": "https://github.com/Williamb269/Project3.git",
-    "accountId": "5f5f620b-8230-4efe-9d70-a60f6a1efe87"
+    "url": "https://github.com/levyukh/Project3",
+    "accountId": "16b0d75e-e8d4-4511-be4d-4cab25ef07d5"
   }
 }]]></component>
   <component name="ProjectColorInfo">{
