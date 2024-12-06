@@ -50,9 +50,9 @@ public class Overworld {
             if (Encounter(20)) {
                 int enemyHp = (int) (Math.random()*10) +1;
                 int enemyAttk = (int) (Math.random() *3) +1;
-                Battle battle = new Battle(player, new Enemy(enemyHp, enemyAttk, Sprites.getEnemySprite()));
-                boolean survived=battle.start();
-                if(!survived)player.die();
+                //Battle battle = new Battle(player, new Enemy(enemyHp, enemyAttk, Sprites.getEnemySprite()));
+                //boolean survived=battle.start();
+                //if(!survived)player.die();
 
             }
             new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor();

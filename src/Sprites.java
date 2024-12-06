@@ -15,7 +15,7 @@ public class Sprites {//used https://kirilllive.github.io/ASCII_Art_Paint/ascii_
     |▒▒▒▒▒▒▒▒|▒▒|
     """;
 
-    private static final String  enemySprite="""
+    public static final String  enemySprite="""
                                                                          ████  @ \s
                                                                         ██████   \s
                                                                       @ (# #██   \s
@@ -31,11 +31,5 @@ public class Sprites {//used https://kirilllive.github.io/ASCII_Art_Paint/ascii_
                                                                       ▐░░░░░▐░▐  \s
     """;
 
-    public static String getPlayerSprite() {
-        return playerSprite;
-    }
 
-    public static String getEnemySprite() {
-        return enemySprite;
-    }
 }
