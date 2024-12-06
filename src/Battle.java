@@ -2,18 +2,18 @@ import java.io.IOException;
 import java.util.Scanner;
 
 public class Battle {
-    Scanner input=new Scanner(System.in);
+    Scanner input = new Scanner(System.in);
     private final Player player;
     private Enemy enemy;
 
     public Battle(Player player, Enemy enemy){
-        this.player=player;
-        this.enemy=enemy;
+        this.player = player;
+        this.enemy = enemy;
     }
     private void printScene(){//improve
         System.out.println(
-                "                              \n"+
-                        enemy.getSprite()+
+                "                              \n" +
+                        enemy.getSprite() +
 
                         player.getSprite()       +
 
@@ -21,21 +21,23 @@ public class Battle {
 
         );
     }
-    private void printMenu(String action){//improve
+
+    private void printMenu(String action) {//improve
         System.out.println("---------------------------------------------------------------------------");
-        System.out.println("|         "+action+"         |");
+        System.out.println("|         " + action + "         |");
         System.out.println("---------------------------------------------------------------------------");
-        System.out.println("player hp:"+player.getHp()+"enemy hp:"+enemy.getHp());
+        System.out.println("player hp: " + player.getHp() + "\nenemy hp: " + enemy.getHp());
     }
-    private int getAttack(){
-        System.out.print("Enter your attack number:");
+
+    private int getAttack() {
+        System.out.print("Enter your attack number: ");
         return input.nextInt();
     }
 
     public boolean start() throws InterruptedException, IOException {//bad
         new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor();
-        String action="                  ";
-        while(enemy.getHp() > 0 && player.getHp()>0) {
+        String action = ("                  ");
+        while (enemy.getHp() > 0 && player.getHp() > 0) {
             printScene();
             printMenu(action);
             int attackChoice = getAttack();
@@ -44,14 +46,15 @@ public class Battle {
             printScene();
             printMenu(action);
             Thread.sleep(2000);
-            if(enemy.getHp() < 1) {
+            if (enemy.getHp() < 1) {
                 break;
             }
             action = enemy.attack(this);
             new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor();
         }
-        boolean won=false;
-        if(player.getHp()>0) {
+
+        boolean won = false;
+        if (player.getHp() > 0) {
             won = true;
         }
         return won;

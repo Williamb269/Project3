@@ -14,9 +14,8 @@ public class Overworld {
         this.x = player.getX();
         this.y = player.getY();
         for(int i = mapWidth;i <= mapHeight * mapWidth;i += mapWidth){
-            this.map[(i/mapWidth)-1]=map.substring(i-mapWidth,i).toCharArray();
+            this.map[(i/mapWidth)-1] = map.substring(i-mapWidth,i).toCharArray();
         }
-
     }
 
     public char getSpace(int x, int y) {
@@ -24,15 +23,17 @@ public class Overworld {
     }
 
     private boolean Encounter(int percent){
-        return Math.random()*100<percent;
+        return Math.random() * 100 < percent;
     }
 
     private void print(){
-        x= player.getX();
-        y=player.getY();
+        x = player.getX();
+        y = player.getY();
         for (int i = 0; i < 5; i++) {
             for (int j = 0; j < 10; j++) {
-                if(j == x && i == y) System.out.print('m');
+                if (j == x && i == y) {
+                    System.out.print('m');
+                }
                 else System.out.print(map[i][j]);
 
             }
@@ -42,8 +43,8 @@ public class Overworld {
 
     public void run() throws IOException, InterruptedException {
 
-        char input=' ';
-        while(input!='x') {
+        char input = ' ';
+        while(input != 'x') {
             print();
             input = Input.keyInput();
             player.move(this, input); //AWHEFIAWEFHAIEFH BAD

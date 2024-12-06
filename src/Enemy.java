@@ -1,9 +1,8 @@
 public class Enemy extends Entity{
 
-    public Enemy(int hp, int attack,String sprite){
-        super(hp, attack,sprite);
+    public Enemy(int hp, int attack, String sprite){
+        super(hp, attack, sprite);
     }
-
 
     protected String lightAttack(Player player){
         player.damage(super.getAttack() / 2);

@@ -4,17 +4,20 @@ public class Entity {
     private String sprite;
 
     Entity(int hp, int attack,String sprite){
-        this.hp=hp;
-        this.attack=attack;
-        this.sprite=sprite;
+        this.hp = hp;
+        this.attack = attack;
+        this.sprite = sprite;
     }
 
-    public int getHp() { return hp; }
+    public int getHp() {
+        return hp;
+    }
+
     public int getAttack() {
         return attack;
     }
     public void raiseAttack(int amount){
-        attack+=amount;
+        attack += amount;
     }
 
     public String getSprite() {
@@ -22,9 +25,10 @@ public class Entity {
     }
 
     public void damage(int damage){
-        hp-=damage;
+        hp -= damage;
     }
-    public void heal(int health){
-        hp+=health;
+
+    public void heal(int health) {
+        hp += health;
     }
 }
