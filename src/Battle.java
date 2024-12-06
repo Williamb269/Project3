@@ -35,7 +35,7 @@ public class Battle {
     public boolean start() throws InterruptedException, IOException {//bad
         new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor();
         String action="                  ";
-        while(enemy.getHp()>0&&player.getHp()>0) {
+        while(enemy.getHp() > 0 && player.getHp()>0) {
             printScene();
             printMenu(action);
             int attackChoice = getAttack();
@@ -44,13 +44,18 @@ public class Battle {
             printScene();
             printMenu(action);
             Thread.sleep(2000);
-            if(enemy.getHp()<1) break;
+            if(enemy.getHp() < 1) {
+                break;
+            }
             action = enemy.attack(this);
             new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor();
         }
         boolean won=false;
-        if(player.getHp()>0) won=true;
+        if(player.getHp()>0) {
+            won = true;
+        }
         return won;
+
     }
 
     public Enemy getEnemy() {

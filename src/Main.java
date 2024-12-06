@@ -1,6 +1,6 @@
 import java.io.IOException;
 
-
+//Create new build, and run in terminal print "java Main",
 public class Main {
     public static void main(String[] args) throws IOException, InterruptedException {
         String room = "##########" +

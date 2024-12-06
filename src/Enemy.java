@@ -6,17 +6,17 @@ public class Enemy extends Entity{
 
 
     protected String lightAttack(Player player){
-        player.damage(super.getAttack()/2);
-        return "the enemy attacks for "+super.getAttack()/2+"damage";
+        player.damage(super.getAttack() / 2);
+        return "the enemy attacks for " + super.getAttack() / 2+"damage";
     }
 
     protected String heavyAttack(Player player){
         player.damage(super.getAttack());
-        return "the enemy attacks for "+super.getAttack()+"damage";
+        return "the enemy attacks for " + super.getAttack() + "damage";
     }
 
     public String attack(Battle battle){
-        if(Math.random()<0.7) return lightAttack(battle.getPlayer());
+        if(Math.random() < 0.7) return lightAttack(battle.getPlayer());
         else return heavyAttack(battle.getPlayer());
 
     }
