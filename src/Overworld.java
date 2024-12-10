@@ -47,7 +47,7 @@ public class Overworld {
             print();
             input = Input.keyInput();
             player.move(this, input);
-            if (Encounter(20)) {
+            if (Encounter(4)) {
                 int enemyHp = (int) (Math.random()*10) +1;
                 int enemyAttk = (int) (Math.random() *3) +1;
                 //Battle battle = new Battle(player, new Enemy(enemyHp, enemyAttk, Sprites.getEnemySprite()));
